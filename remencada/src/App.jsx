@@ -1,12 +1,13 @@
 import React from 'react';
+import { Header } from './components/Header';
+import { Historia } from './components/Historia';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 className="header title">LA REMENÇADA</h1>
-      </header>
+      <Header />
+      <Historia />
     </div>
   );
 }

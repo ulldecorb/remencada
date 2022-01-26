@@ -1,0 +1,14 @@
+@import '../../style/colors'; 
+@import '../../style/mixins';
+
+.header {
+    position: fixed;
+    top: 0; left: 0;
+    @include flex(column, center, center);
+
+    &__title {
+        text-align: center;
+        width: 100vw;
+        color: $title;
+    }
+}
