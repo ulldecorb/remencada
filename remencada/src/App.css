@@ -7,4 +7,8 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+.app__top-margin {
+  margin: 10vh;
+}
 /*# sourceMappingURL=App.css.map */
