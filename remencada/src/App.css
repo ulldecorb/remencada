@@ -9,6 +9,10 @@ body {
 }
 
 .app__top-margin {
-  margin: 10vh;
+  height: 10vh;
+}
+
+.app__bottom-margin {
+  height: 10vh;
 }
 /*# sourceMappingURL=App.css.map */

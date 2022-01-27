@@ -10,6 +10,10 @@ body {
 
 .app {
     &__top-margin {
-        margin: 10vh;
+        height: 10vh;
+    }
+
+    &__bottom-margin {
+        height: 10vh;
     }
 }

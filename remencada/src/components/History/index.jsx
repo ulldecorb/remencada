@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Historia = function Historia() {
+export const History = function History() {
   return (
     <section className="historia">
       <h2 className="historia__title">HISTÒRIA DE LES GUERRES REMENCES</h2>
@@ -39,4 +39,4 @@ export const Historia = function Historia() {
   );
 };
 
-export default Historia;
+export default History;
