@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 export const Header = function Header() {
@@ -6,12 +7,10 @@ export const Header = function Header() {
     <header className="header">
       <h1 className="header__title">LA REMENÇADA</h1>
       <nav className="header__navbar">
-        <ul className="navbar">
-          <li className="navbar__home">
-            <a href="http://www.laremencada.cat/" className="home__anchor">la remençada</a>
-
-          </li>
-        </ul>
+        <Link to="../">HOME</Link>
+        <Link to="../historia">HISTÒRIA</Link>
+        <Link to="../quisom">QUI SOM</Link>
+        <Link to="../map">CONTACTE</Link>
       </nav>
     </header>
   );

@@ -11,4 +11,8 @@
         width: 100vw;
         color: $title;
     }
+
+    &__navbar {
+        @include flex(row, center, center);
+    }
 }
