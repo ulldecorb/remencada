@@ -38,4 +38,12 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.header__navbar .navbar__link {
+  margin: 0 2vw;
+}
+
+.header__navbar .navbar__link:hover {
+  color: red;
+}
 /*# sourceMappingURL=Header.css.map */
