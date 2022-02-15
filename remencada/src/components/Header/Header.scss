@@ -14,5 +14,13 @@
 
     &__navbar {
         @include flex(row, center, center);
+
+        .navbar__link {
+            margin: 0 2vw;
+
+            &:hover {
+                color:red;
+            }
+        }
     }
 }

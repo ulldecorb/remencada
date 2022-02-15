@@ -5,12 +5,13 @@ import './Header.css';
 export const Header = function Header() {
   return (
     <header className="header">
-      <h1 className="header__title">LA REMENÇADA</h1>
+      <Link to="../">
+        <h1 className="header__title">LA REMENÇADA</h1>
+      </Link>
       <nav className="header__navbar">
-        <Link to="../">HOME</Link>
-        <Link to="../historia">HISTÒRIA</Link>
-        <Link to="../quisom">QUI SOM</Link>
-        <Link to="../map">CONTACTE</Link>
+        <Link classname="navbar__link" to="../quisom">QUI SOM</Link>
+        <Link classname="navbar__link" to="../historia">HISTÒRIA</Link>
+        <Link classname="navbar__link" to="../map">CONTACTE</Link>
       </nav>
     </header>
   );
