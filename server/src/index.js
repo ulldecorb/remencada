@@ -8,29 +8,23 @@ require('dotenv').config();
 
 const server = express();
 const port = process.env.PORT || 4545;
-const projectsRouter = require('./routes/projects.route');
-const themesRouter = require('./routes/themes.route');
-const lessonsRouter = require('./routes/lessons.route');
-const usersRouter = require('./routes/users.route');
+const aboutUsRouter = require('./routes/aboutUs.route');
 
 mongoose.connect(
   process.env.DDBB_URL,
   {
     useUnifiedTopology: true,
-    useNewUrlParser: true,
-  },
+    useNewUrlParser: true
+  }
 );
 
 server.use(cors());
 server.use(express.json());
 server.use(morgan('dev'));
 
-server.use('/api/projects', projectsRouter);
-server.use('/api/themes', themesRouter);
-server.use('/api/lessons', lessonsRouter);
-server.use('/api/users', usersRouter);
+server.use('/api/aboutUs', aboutUsRouter);
 
 server.listen(
   port,
-  () => debug(`Server is running in ${chalk.yellow(`localhost:${port}`)}`),
+  () => debug(`Server is running in ${chalk.yellow(`localhost:${port}`)}`)
 );
