@@ -9,6 +9,7 @@ require('dotenv').config();
 const server = express();
 const port = process.env.PORT || 4545;
 const aboutUsRouter = require('./routes/aboutUs.route');
+const historyRouter = require('./routes/history.route');
 
 mongoose.connect(
   process.env.DDBB_URL,
@@ -23,6 +24,7 @@ server.use(express.json());
 server.use(morgan('dev'));
 
 server.use('/api/aboutus', aboutUsRouter);
+server.use('/api/history', historyRouter);
 
 server.listen(
   port,
