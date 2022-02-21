@@ -1,9 +1,16 @@
+import { PropTypes } from 'prop-types';
 import React from 'react';
 
-export const AboutUs = function AboutUs() {
+export const AboutUs = function AboutUs({ data }) {
   return (
     <section className="qui-som">
-      <h2 className="qui-som__title">QUI SOM</h2>
+      {data.map((entry) => (
+        <article>
+          <h2>{entry.title}</h2>
+          <p>{entry.description}</p>
+        </article>
+      ))}
+      {/* <h2 className="qui-som__title">QUI SOM</h2>
       <p>
         La Remençada és un espectacle musical de gran format
         que es representa un cop l&apos;any a Montornès del Vallès.
@@ -62,9 +69,17 @@ export const AboutUs = function AboutUs() {
         Aquesta és l&apos;aspiració de La Remençada, acabar formant part del llistat
         d&apos;honor dels grans espectacles imprescindibles del calendari cultural
         català.
-      </p>
+      </p> */}
     </section>
   );
+};
+
+AboutUs.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.object
+  ).isRequired
+  // title: PropTypes.string.isRequired,
+  // description: PropTypes.string.isRequired
 };
 
 export default AboutUs;
