@@ -6,14 +6,14 @@ function aboutUsRouter() {
 
   routes
     .route('/')
-    .get(aboutUsController.getAll)
-    .post(aboutUsController.createOne);
+    .get(aboutUsController.getAll);
+  // .post(aboutUsController.createOne);
 
-  routes
-    .route('/:aboutUsID')
-    .delete(aboutUsController.deleteById)
-    .get(aboutUsController.getById)
-    .put(aboutUsController.updateById);
+  // routes
+  //   .route('/:aboutusID')
+  //   .delete(aboutUsController.deleteById)
+  //   .get(aboutUsController.getById)
+  //   .put(aboutUsController.updateById);
 
   return routes;
 }

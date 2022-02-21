@@ -22,7 +22,7 @@ server.use(cors());
 server.use(express.json());
 server.use(morgan('dev'));
 
-server.use('/api/aboutUs', aboutUsRouter);
+server.use('/api/aboutus', aboutUsRouter);
 
 server.listen(
   port,
