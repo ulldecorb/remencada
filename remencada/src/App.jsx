@@ -14,6 +14,7 @@ import './App.css';
 
 function App() {
   const [aboutUsData, setAboutUsData] = useState([]);
+  const [historyData, setHistoryData] = useState([]);
 
   const getAboutUs = async () => {
     const response = await fetch('http://localhost:4545/api/aboutus');
@@ -21,8 +22,15 @@ function App() {
     setAboutUsData(data);
   };
 
+  const getHistory = async () => {
+    const response = await fetch('http://localhost:4545/api/history');
+    const data = await response.json();
+    setHistoryData(data);
+  };
+
   useEffect(() => {
     getAboutUs();
+    getHistory();
   }, []);
 
   // console.log(Object.keys(getAboutUs()));
@@ -39,7 +47,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="historia" element={<History />} />
+            <Route path="historia" element={<History data={historyData} />} />
             <Route path="quisom" element={<AboutUs data={aboutUsData} />} />
             <Route path="map" element={<Map />} />
           </Routes>
