@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from 'react-router-dom';
-
 import { Header } from './components/Header';
 import { Home } from './components/Home';
 import { History } from './components/History';
@@ -14,6 +13,20 @@ import { Map } from './components/Map';
 import './App.css';
 
 function App() {
+  const [aboutUsData, setAboutUsData] = useState([]);
+
+  const getAboutUs = async () => {
+    const response = await fetch('http://localhost:4545/api/aboutus');
+    const data = await response.json();
+    setAboutUsData(data);
+  };
+
+  useEffect(() => {
+    getAboutUs();
+  }, []);
+
+  // console.log(Object.keys(getAboutUs()));
+
   return (
     <div className="app">
       <div className="app__top-margin" />
@@ -27,7 +40,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="historia" element={<History />} />
-            <Route path="quisom" element={<AboutUs />} />
+            <Route path="quisom" element={<AboutUs data={aboutUsData} />} />
             <Route path="map" element={<Map />} />
           </Routes>
         </Router>
