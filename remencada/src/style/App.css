@@ -9,11 +9,15 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: 'Open Sans', sans-serif;
-  background-color: #a70032;
+  background-color: #fcfcfc;
 }
 
 body h1, body h2 {
   font-family: 'Ubuntu', sans-serif;
+}
+
+body h2 {
+  margin: 2vmin 0;
 }
 
 body section {
@@ -48,6 +52,10 @@ body article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body iframe {
+  border-radius: 5vmin;
 }
 
 .app__top-margin {

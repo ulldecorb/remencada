@@ -17,6 +17,10 @@ body {
         font-family: 'Ubuntu', sans-serif;
     }
 
+    h2 {
+        margin: 2vmin 0;
+    }
+
     section {
         @include flex(column, center, center);
     }
@@ -27,6 +31,9 @@ body {
         @include flex(column, center, center);
     }
 
+    iframe {
+        border-radius : 5vmin;
+    }
 }
 
 .app {
