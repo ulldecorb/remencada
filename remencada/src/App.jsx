@@ -10,7 +10,7 @@ import { History } from './components/History';
 import { Footer } from './components/Footer';
 import { AboutUs } from './components/AboutUs';
 import { Map } from './components/Map';
-import './App.css';
+import './style/App.css';
 
 function App() {
   const [aboutUsData, setAboutUsData] = useState([]);

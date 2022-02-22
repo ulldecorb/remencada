@@ -9,9 +9,9 @@ export const Header = function Header() {
         <h1 className="header__title">LA REMENÇADA</h1>
       </Link>
       <nav className="header__navbar">
-        <Link classname="navbar__link" to="../quisom">QUI SOM</Link>
-        <Link classname="navbar__link" to="../historia">HISTÒRIA</Link>
-        <Link classname="navbar__link" to="../map">CONTACTE</Link>
+        <Link className="navbar__link" to="../quisom">QUI SOM</Link>
+        <Link className="navbar__link" to="../historia">HISTÒRIA</Link>
+        <Link className="navbar__link" to="../map">CONTACTE</Link>
       </nav>
     </header>
   );

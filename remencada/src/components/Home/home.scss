@@ -1,0 +1,7 @@
+@import '../../style/colors';
+@import '../../style/mixins';
+
+.home {
+    background-color: $main-color; 
+    @include flex(column, center, center)
+}
