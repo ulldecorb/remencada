@@ -5,7 +5,7 @@ export const History = function History({ data }) {
   return (
     <section className="historia">
       {data.map((article) => (
-        <article>
+        <article key={article.title}>
           <h2>{article.title}</h2>
           <p>{article.description}</p>
         </article>

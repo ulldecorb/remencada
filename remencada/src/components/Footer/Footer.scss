@@ -4,13 +4,42 @@
     position: fixed;
     bottom: 0;
     width: 100vw;
+    height: 6vh;
 
-    &__list {
-        color: green;
+    &__icons {
+        width: 100%;
+        height: 100%;
+        background-color: green;
         @include flex(row, center, center);
 
-        li{
+        figure{
             margin: 0 2vw;
         }
+    }
+
+    &__icon {
+        height: 100%;
+        width: 5%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__ajuntament-icon {
+        width: 10%;
+        background-image: url('../../assets/ajuntament-montornes.svg');
+    }
+    
+    &__henkel-icon {
+        background-image: url('../../assets/henkel.svg');
+    }
+    
+    &__corte-ingles-icon {
+        width: 10%;
+        background-image: url('../../assets/el-corte-ingles.svg');
+    }
+
+    &__lucta-icon {
+        background-image: url('https://www.lucta.com/wp-content/themes/lucta/images/lucta-logo.jpg');
     }
 }

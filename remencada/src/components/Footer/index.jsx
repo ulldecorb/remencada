@@ -4,12 +4,12 @@ import './Footer.css';
 export const Footer = function Footer() {
   return (
     <footer className="footer">
-      <ul className="footer__list">
-        <li className="list__anchor">AJUNTAMENT</li>
-        <li className="list__anchor">HENKEL</li>
-        <li className="list__anchor">EL CORTE INGLES</li>
-        <li className="list__anchor">LUCTA</li>
-      </ul>
+      <div className="footer__icons">
+        <figure className="footer__icon footer__ajuntament-icon" alt="henkel icon" />
+        <figure className="footer__icon footer__henkel-icon" alt="henkel icon" />
+        <figure className="footer__icon footer__corte-ingles-icon" alt="corte ingles icon" />
+        <figure className="footer__icon footer__lucta-icon" alt="lucta icon" />
+      </div>
     </footer>
   );
 };
