@@ -33,16 +33,10 @@ function App() {
     getHistory();
   }, []);
 
-  // console.log(Object.keys(getAboutUs()));
-
   return (
     <div className="app">
       <div className="app__top-margin" />
       <main>
-        {/* <Home />
-        <AboutUs />
-        <History />
-      <Map /> */}
         <Router>
           <Header />
           <Routes>

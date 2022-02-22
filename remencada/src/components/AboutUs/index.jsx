@@ -4,10 +4,10 @@ import { PropTypes } from 'prop-types';
 export const AboutUs = function AboutUs({ data }) {
   return (
     <section className="qui-som">
-      {data.map((entry) => (
-        <article>
-          <h2>{entry.title}</h2>
-          <p>{entry.description}</p>
+      {data.map((article) => (
+        <article key={article.title}>
+          <h2>{article.title}</h2>
+          <p>{article.description}</p>
         </article>
       ))}
       {/* <h2 className="qui-som__title">QUI SOM</h2>
