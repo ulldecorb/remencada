@@ -3,6 +3,7 @@
   bottom: 0;
   width: 100vw;
   height: 6vh;
+  border-top: 1vh solid #021602;
 }
 
 .footer__icons {

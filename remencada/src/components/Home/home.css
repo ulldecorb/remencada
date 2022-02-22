@@ -1,5 +1,5 @@
-.map {
-  width: 100vw;
+.home {
+  background-color: #fcfcfc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,8 +14,4 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
-.map__google-map {
-  border-radius: 4vw;
-}
-/*# sourceMappingURL=Map.css.map */
+/*# sourceMappingURL=home.css.map */

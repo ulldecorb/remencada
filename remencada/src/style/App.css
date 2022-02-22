@@ -1,7 +1,26 @@
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fcfcfc;
+}
+
+body h1, body h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body h2 {
+  margin: 2vmin 0;
+}
+
+body section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,20 +36,16 @@
           align-items: center;
 }
 
-.header__title {
-  text-align: center;
-  width: 100vw;
-  color: #804400;
-}
-
-.header__navbar {
+body article {
+  padding: 0 3vw;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -39,11 +54,15 @@
           align-items: center;
 }
 
-.header__navbar .navbar__link {
-  margin: 0 2vw;
+body iframe {
+  border-radius: 5vmin;
 }
 
-.header__navbar .navbar__link:hover {
-  color: red;
+.app__top-margin {
+  height: 10vh;
 }
-/*# sourceMappingURL=Header.css.map */
+
+.app__bottom-margin {
+  height: 10vh;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,47 @@
+@import './colors'; 
+@import './mixins'; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $main-color;
+
+    h1, h2 {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    h2 {
+        margin: 2vmin 0;
+    }
+
+    section {
+        @include flex(column, center, center);
+    }
+
+    article {
+        padding: 0 3vw;
+        width: 80%;
+        @include flex(column, center, center);
+    }
+
+    iframe {
+        border-radius : 5vmin;
+    }
+}
+
+.app {
+    &__top-margin {
+        height: 10vh;
+    }
+
+    &__bottom-margin {
+        height: 10vh;
+    }
+}
