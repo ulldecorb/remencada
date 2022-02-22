@@ -1,9 +1,16 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
-export const History = function History() {
+export const History = function History({ data }) {
   return (
     <section className="historia">
-      <h2 className="historia__title">HISTÒRIA DE LES GUERRES REMENCES</h2>
+      {data.map((article) => (
+        <article>
+          <h2>{article.title}</h2>
+          <p>{article.description}</p>
+        </article>
+      ))}
+      {/* <h2 className="historia__title">HISTÒRIA DE LES GUERRES REMENCES</h2>
       <p>
         La situació de la pagesia catalana s&apos;havia agreujat al segle XV per
         un enduriment de les lleis feudals que volia compensar amb nous impostos
@@ -34,9 +41,15 @@ export const History = function History() {
         Les conseqüències van ser importants: el nivell de vida de la pagesia catalana
         va augmentar considerablement, la població del Principat es va duplicar i es
         van establir les bases per a la industrialització catalana dels segles XVII i XVIII.
-      </p>
+      </p> */}
     </section>
   );
+};
+
+History.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.object
+  ).isRequired
 };
 
 export default History;
