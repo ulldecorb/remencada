@@ -1,0 +1,35 @@
+// body, html {
+//     height: 100%;
+//     margin: 0;
+//   }
+
+.history {
+        height: 100%;
+        margin: 0;
+
+        p {
+            margin: 2vh 0;
+        }
+
+    &__figure {
+        height: 100%;
+        width: 100%;
+        // background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../../assets/png/1.png");
+
+        &--a {
+            background-image: url("../../assets/png/1.png");
+        }
+
+        &--b {
+            background-image: url("../../assets/png/2.png");
+        }
+
+        &--c {
+            background-image: url("../../assets/png/3.png");
+        }
+    }
+}

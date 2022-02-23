@@ -1,0 +1,30 @@
+.history {
+  height: 100%;
+  margin: 0;
+}
+
+.history p {
+  margin: 2vh 0;
+}
+
+.history__figure {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../assets/png/1.png");
+}
+
+.history__figure--a {
+  background-image: url("../../assets/png/1.png");
+}
+
+.history__figure--b {
+  background-image: url("../../assets/png/2.png");
+}
+
+.history__figure--c {
+  background-image: url("../../assets/png/3.png");
+}
+/*# sourceMappingURL=History.css.map */
