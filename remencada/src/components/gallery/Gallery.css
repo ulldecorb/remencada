@@ -22,12 +22,35 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 50vw;
+  max-width: 40vw;
   height: 70vh;
   width: 100%;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
   overflow-y: hidden;
+}
+
+.gallery__slider::-webkit-scrollbar {
+  width: 5px;
+  /* width of the entire scrollbar */
+}
+
+.gallery__slider::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+
+.gallery__slider::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.637);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  position: absolute;
+  bottom: 5px;
+}
+
+.gallery__slider::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(131, 5, 5, 0.637);
 }
 
 .gallery__slider .slider__image {
