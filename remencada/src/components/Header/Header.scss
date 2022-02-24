@@ -2,24 +2,31 @@
 @import '../../style/mixins';
 
 .header {
+    width: 100vw;
     position: fixed;
     top: 0; left: 0;
-    @include flex(column, center, center);
+    @include flex(row, space-between, center);
+    background-color: $main-color;
 
     &__title {
         text-align: center;
-        width: 100vw;
-        color: $title;
+        width: 20vw;
+        color: $title-color;
     }
 
     &__navbar {
         @include flex(row, center, center);
 
         .navbar__link {
-            margin: 0 2vw;
-
+            margin: 0 1vw;
+            color: $title-color;
+            text-decoration: none;
+            
+            &:link {
+                color: $title-color;
+            }
             &:hover {
-                color:red;
+                color:$title-hover-color;
             }
         }
     }
