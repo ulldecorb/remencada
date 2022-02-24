@@ -6,9 +6,10 @@ import {
 } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Home } from './components/Home';
+import { AboutUs } from './components/AboutUs';
 import { History } from './components/History';
 import { Footer } from './components/Footer';
-import { AboutUs } from './components/AboutUs';
+import { Gallery } from './components/Gallery';
 import { Map } from './components/Map';
 import './style/App.css';
 
@@ -43,6 +44,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="historia" element={<History data={historyData} />} />
             <Route path="quisom" element={<AboutUs data={aboutUsData} />} />
+            <Route path="gallery" element={<Gallery />} />
             <Route path="map" element={<Map />} />
           </Routes>
         </Router>
