@@ -1,0 +1,50 @@
+.gallery {
+    height: 81vh;
+    width: 100%;
+    background-color: red;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+    &__slider {
+        position:absolute;
+        display: flex;
+        
+        max-width: 40vw;
+        height: 70vh;
+        width: 100%;
+
+        scroll-snap-type: x mandatory;
+        overflow-y: hidden;
+
+        &::-webkit-scrollbar {
+            width: 5px;               /* width of the entire scrollbar */
+          }
+          
+          &::-webkit-scrollbar-track {
+            background: transparent;  /* color of the tracking area */
+          }
+          
+          &::-webkit-scrollbar-thumb {
+            background-color: rgba(128, 128, 128, 0.637);    /* color of the scroll thumb */
+            border-radius: 20px;       /* roundness of the scroll thumb */
+            position: absolute;
+            bottom: 5px;
+
+            &:hover{
+                background-color: rgba(131, 5, 5, 0.637);
+            }
+          }
+        
+        .slider {
+
+            &__image {
+                width:100%;
+                object-fit: cover;
+                scroll-snap-align: center;
+            }
+        }
+    }
+}
