@@ -16,6 +16,7 @@
 
     &__navbar {
         @include flex(row, center, center);
+        margin-right: 2vw;
 
         .navbar__link {
             margin: 0 1vw;

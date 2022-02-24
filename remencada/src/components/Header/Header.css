@@ -39,6 +39,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 2vw;
 }
 
 .header__navbar .navbar__link {

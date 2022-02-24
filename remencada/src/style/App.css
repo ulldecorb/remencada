@@ -59,11 +59,6 @@ body iframe {
   border-radius: 5vmin;
 }
 
-body Link {
-  color: orange;
-  color: #cc3e25;
-}
-
 .app__top-margin {
   height: 10vh;
 }
