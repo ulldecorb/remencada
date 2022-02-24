@@ -1,20 +1,21 @@
+@import '../../style/colors';
+@import '../../style/mixins';
+
 .gallery {
-    height: 81vh;
+    // height: 81vh;
     width: 100%;
     background-color: red;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    @include flex(column, flex-start,center);
     
     &__slider {
-        position:absolute;
         display: flex;
-        
+        border-radius: 2vh;
+        outline: 2vh solid orange;
         max-width: 40vw;
         height: 70vh;
         width: 100%;
+        margin: 2vh;
 
         scroll-snap-type: x mandatory;
         overflow-y: hidden;
@@ -24,12 +25,12 @@
           }
           
           &::-webkit-scrollbar-track {
-            background: transparent;  /* color of the tracking area */
+            background: orangered;  /* color of the tracking area */
           }
           
           &::-webkit-scrollbar-thumb {
             background-color: rgba(128, 128, 128, 0.637);    /* color of the scroll thumb */
-            border-radius: 20px;       /* roundness of the scroll thumb */
+            // border-radius: 20px;       /* roundness of the scroll thumb */
             position: absolute;
             bottom: 5px;
 
@@ -46,5 +47,16 @@
                 scroll-snap-align: center;
             }
         }
+    }
+
+    &__video-box {
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 2vh 0;
+
+      .video-box__video {
+        margin: 2vh;
+      }
     }
 }
