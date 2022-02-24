@@ -9,11 +9,12 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: 'Open Sans', sans-serif;
-  background-color: #fcfcfc;
+  background-color: #630404;
 }
 
 body h1, body h2 {
   font-family: 'Ubuntu', sans-serif;
+  color: #cc3e25;
 }
 
 body h2 {
