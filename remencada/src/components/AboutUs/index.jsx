@@ -7,7 +7,7 @@ export const AboutUs = function AboutUs({ data }) {
       {data.map((article) => (
         <article key={article.title}>
           <h2>{article.title}</h2>
-          <p>{article.description}</p>
+          <p>{article.first}</p>
         </article>
       ))}
     </section>
