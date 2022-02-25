@@ -8,8 +8,9 @@
     
     &__slider {
         display: flex;
-        border-radius: 2vh;
-        outline: 2vh solid orange;
+        // border-radius: 2vh;
+        // outline: 2vh solid orange;
+        box-shadow: 0 0 2vh 0 orange;
         max-width: 30vw;
         height: 70vh;
         width: 100%;
