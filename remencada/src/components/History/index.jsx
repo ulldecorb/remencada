@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 import './History.css';
 
 export const History = function History({ data }) {
+  // const firstData = data.find((doc) => doc.title === 'QUI SOM?');
   const firstData = data[0];
   const {
     title, first, second, thirth, fourth, fifth, sixth, seventh
