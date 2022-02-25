@@ -55,6 +55,10 @@ body article {
           align-items: center;
 }
 
+body article p {
+  color: #cfd15a;
+}
+
 body iframe {
   border-radius: 5vmin;
 }

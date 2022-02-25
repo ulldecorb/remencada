@@ -30,6 +30,10 @@ body {
         padding: 0 3vw;
         width: 80%;
         @include flex(column, center, center);
+
+        p {
+            color: $text-plain-color;
+        }
     }
 
     iframe {
