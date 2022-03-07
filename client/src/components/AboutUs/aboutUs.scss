@@ -14,29 +14,37 @@
         background-repeat: no-repeat;
         background-size: cover;
     
-        &__1 {
-            background-image: url("../../assets/png/1.png");
-            min-height: 500px; 
-        }
-
-        &__2 {
+        &__a {        
             background-image: url("../../assets/png/2.png");
-            min-height: 500px; 
+            height: 100vh; 
+            width: 100vw;
         }
 
-        &__3 {
-            background-image: url("../../assets/png/3.png");
-            min-height: 500px; 
+        &__b {
+            background-image: url("../../assets/png/10.png");
+            height: 100vh; 
+            width: 100vw;
+        }
+
+        &__c {
+            background-image: url("../../assets/png/13.png");
+            min-height: 100vh; 
+            width: 100vw;
         }
         
-        &__4 {
-            background-image: url("../../assets/png/4.png");
-            min-height: 500px; 
-        }
+        &__d {
+            background-image: url("../../assets/png/18.png");
+            min-height: 100vh; 
+            width: 100vw;
+filter: invert(100%);        }
 
         &__txt {
             background-color: red;
-            height: 5vh;
+            height: 8vh;
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     
     }
