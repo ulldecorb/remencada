@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,25 +15,25 @@ import { Map } from './components/Map';
 import './style/App.css';
 
 function App() {
-  const [aboutUsData, setAboutUsData] = useState([]);
-  const [historyData, setHistoryData] = useState([]);
+  // const [aboutUsData, setAboutUsData] = useState([]);
+  // const [historyData, setHistoryData] = useState([]);
 
-  const getAboutUs = async () => {
-    const response = await fetch('http://localhost:4545/api/aboutus');
-    const data = await response.json();
-    setAboutUsData(data);
-  };
+  // const getAboutUs = async () => {
+  //   const response = await fetch('http://localhost:4545/api/aboutus');
+  //   const data = await response.json();
+  //   setAboutUsData(data);
+  // };
 
-  const getHistory = async () => {
-    const response = await fetch('http://localhost:4545/api/history');
-    const data = await response.json();
-    setHistoryData(data);
-  };
+  // const getHistory = async () => {
+  //   const response = await fetch('http://localhost:4545/api/history');
+  //   const data = await response.json();
+  //   setHistoryData(data);
+  // };
 
-  useEffect(() => {
-    getAboutUs();
-    getHistory();
-  }, []);
+  // useEffect(() => {
+  //   getAboutUs();
+  //   getHistory();
+  // }, []);
 
   return (
     <div className="app">
@@ -42,8 +43,8 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="historia" element={<History data={historyData} />} />
-            <Route path="quisom" element={<AboutUs data={aboutUsData} />} />
+            <Route path="historia" element={<History />} />
+            <Route path="quisom" element={<AboutUs />} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="map" element={<Map />} />
           </Routes>
