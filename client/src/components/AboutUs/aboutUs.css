@@ -1,0 +1,43 @@
+.qui-som {
+  width: 100vw;
+  margin: 0;
+}
+
+.qui-som p {
+  margin: 2vh 0;
+  width: 100%;
+  text-align: center;
+}
+
+.qui-som .parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.qui-som .parallax__1 {
+  background-image: url("../../assets/png/1.png");
+  min-height: 500px;
+}
+
+.qui-som .parallax__2 {
+  background-image: url("../../assets/png/2.png");
+  min-height: 500px;
+}
+
+.qui-som .parallax__3 {
+  background-image: url("../../assets/png/3.png");
+  min-height: 500px;
+}
+
+.qui-som .parallax__4 {
+  background-image: url("../../assets/png/4.png");
+  min-height: 500px;
+}
+
+.qui-som .parallax__txt {
+  background-color: red;
+  height: 5vh;
+}
+/*# sourceMappingURL=aboutUs.css.map */
