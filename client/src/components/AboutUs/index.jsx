@@ -27,24 +27,30 @@ export const AboutUs = function AboutUs() {
         </article>
       ))}
       <h2>Remençada</h2>
-      <div className="parallax parallax__1" />
-      <pre className="parallax__txt">
+      <div className="parallax parallax__a" />
+      <p className="parallax__txt">
+        Acte 1er: L&#39;INCENDI DELS PALLERS
+        <br />
         Un foc fortuït crema els pallers del senyor feudal.
         Els remences estan obligats per llei a sufragar-ne els danys.
-      </pre>
-      <div className="parallax parallax__2" />
-      <pre className="parallax__txt">
+      </p>
+      <div className="parallax parallax__b" />
+      <p className="parallax__txt">
+        Acte 2on: BARTOMEU HA DE FUGIR
+        <br />
         L&#39;amo reclama la filla del remença Bartomeu Sala per a minyona del castell.
         El pare es nega a cedir-la.
         S&#39;anuncien les represàlies del senyor feudal i Bartomeu ha d&#39;escapar.
-      </pre>
-      <div className="parallax parallax__3" />
-      <pre className="parallax__txt">
+      </p>
+      <div className="parallax parallax__c" />
+      <p className="parallax__txt">
+        Acte 3er:  LA REVOLTA ARRIBA AL VALLÈS
+        <br />
         El mercat setmanal es veu trastornat per la proximitat de les tropes rebels.
         Cada pagès s&#39;ha de definir a favor o en contra de la revolta.
         Els joves es volen unir a la rebel·lió.
-      </pre>
-      <div className="parallax parallax__4" />
+      </p>
+      <div className="parallax parallax__d" />
 
     </section>
   );
