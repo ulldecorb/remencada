@@ -18,22 +18,24 @@ export const History = function History() {
   }, []);
 
   // const firstData = historyData[0];
-  const {
-    title
-    // , first, second, thirth, fourth, fifth, sixth, seventh
-  } = historyData[0];
+  // const {
+  //   title
+  //   // , first, second, thirth, fourth, fifth, sixth, seventh
+  // } = historyData[0];
   return (
     <section className="history">
-      <h2>{title}</h2>
-      <article>
-        {/* <p>{first}</p>
-        <p>{second}</p>
-        <p>{thirth}</p>
-        <p>{fourth}</p>
-        <p>{fifth}</p>
-        <p>{sixth}</p>
-        <p>{seventh}</p> */}
-      </article>
+      {historyData.map((article) => (
+        <article key={article.title}>
+          <h2>{article.title}</h2>
+          <p>{article.p1}</p>
+          <p>{article.p2}</p>
+          <p>{article.p3}</p>
+          <p>{article.p4}</p>
+          <p>{article.p5}</p>
+          <p>{article.p6}</p>
+          <p>{article.p7}</p>
+        </article>
+      ))}
     </section>
   );
 };

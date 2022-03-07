@@ -17,7 +17,7 @@ export const AboutUs = function AboutUs() {
   return (
     <section className="qui-som">
       {aboutUsData.map((article) => (
-        <article key={article.id}>
+        <article key={article.title}>
           <h2>{article.title}</h2>
           <p>{article.p1}</p>
           <p>{article.p2}</p>
