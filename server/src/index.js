@@ -24,7 +24,7 @@ server.use(express.json());
 server.use(morgan('dev'));
 
 server.use('/api/aboutus', aboutUsRouter);
-server.use('/api/history', historyRouter);
+server.use('/api/histories', historyRouter);
 
 server.listen(
   port,
