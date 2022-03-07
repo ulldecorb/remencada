@@ -1,0 +1,45 @@
+.qui-som {
+    width: 100vw;
+    margin: 0;
+
+    p {
+        margin: 2vh 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        &__1 {
+            background-image: url("../../assets/png/1.png");
+            min-height: 500px; 
+        }
+
+        &__2 {
+            background-image: url("../../assets/png/2.png");
+            min-height: 500px; 
+        }
+
+        &__3 {
+            background-image: url("../../assets/png/3.png");
+            min-height: 500px; 
+        }
+        
+        &__4 {
+            background-image: url("../../assets/png/4.png");
+            min-height: 500px; 
+        }
+
+        &__txt {
+            background-color: red;
+            height: 5vh;
+        }
+    
+    }
+
+
+}

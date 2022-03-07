@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
-// import { PropTypes } from 'prop-types';
 import './History.css';
 
 export const History = function History() {
-  // const firstData = data.find((doc) => doc.title === 'QUI SOM?');
-
   const [historyData, setHistoryData] = useState([]);
 
   const getHistory = async () => {
@@ -17,11 +14,6 @@ export const History = function History() {
     getHistory();
   }, []);
 
-  // const firstData = historyData[0];
-  // const {
-  //   title
-  //   // , first, second, thirth, fourth, fifth, sixth, seventh
-  // } = historyData[0];
   return (
     <section className="history">
       {historyData.map((article) => (
