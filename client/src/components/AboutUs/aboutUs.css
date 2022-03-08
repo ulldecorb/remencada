@@ -13,7 +13,7 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .qui-som .parallax__a {
@@ -38,13 +38,28 @@
   background-image: url("../../assets/png/18.png");
   min-height: 100vh;
   width: 100vw;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+}
+
+.qui-som .parallax__e {
+  background-image: url("../../assets/png/21.png");
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.qui-som .parallax__f {
+  background-image: url("../../assets/png/25.png");
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.qui-som .parallax__g {
+  background-image: url("../../assets/png/27.png");
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .qui-som .parallax__txt {
   background-color: red;
-  height: 8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,5 +73,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=aboutUs.css.map */

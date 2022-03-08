@@ -12,7 +12,7 @@
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     
         &__a {        
             background-image: url("../../assets/png/2.png");
@@ -36,18 +36,33 @@
             background-image: url("../../assets/png/18.png");
             min-height: 100vh; 
             width: 100vw;
-filter: invert(100%);        }
+        }
+        
+        &__e {
+            background-image: url("../../assets/png/21.png");
+            min-height: 100vh; 
+            width: 100vw;
+        }
+        
+        &__f {
+            background-image: url("../../assets/png/25.png");
+            min-height: 100vh; 
+            width: 100vw;
+        }
+        
+        &__g {
+            background-image: url("../../assets/png/27.png");
+            min-height: 100vh; 
+            width: 100vw;
+        }
 
         &__txt {
             background-color: red;
-            height: 8vh;
             display: flex; 
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-size: 1rem;
         }
-    
     }
-
-
 }
