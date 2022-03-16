@@ -29,6 +29,8 @@ export const AboutUs = function AboutUs() {
           <p>{article.p2}</p>
           <p>{article.p3}</p>
           <p>{article.p4}</p>
+          <p>{article.p5}</p>
+          <p>{article.p6}</p>
         </article>
       ))}
       <h2>Actes de l&#39;Obra</h2>
