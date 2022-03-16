@@ -16,13 +16,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #630404;
+  background-color: black;
 }
 
 .header__title {
   text-align: center;
   width: 20vw;
-  color: #cc3e25;
+  color: #e4c331;
   text-decoration: none;
 }
 
@@ -45,12 +45,12 @@
 
 .header__navbar .navbar__link {
   margin: 0 1vw;
-  color: #cc3e25;
+  color: #e4c331;
   text-decoration: none;
 }
 
 .header__navbar .navbar__link:link {
-  color: #cc3e25;
+  color: #e4c331;
 }
 
 .header__navbar .navbar__link:hover {

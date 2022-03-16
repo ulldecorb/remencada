@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './aboutUs.css';
 
 export const AboutUs = function AboutUs() {
   const [aboutUsData, setAboutUsData] = useState([]);
 
-  const getAboutUs = async () => {
-    const response = await fetch('http://localhost:4545/api/aboutus');
-    const data = await response.json();
-    setAboutUsData(data);
-  };
-
   useEffect(() => {
-    getAboutUs();
+    axios.get('http://localhost:4545/api/aboutus').then((res) => {
+      setAboutUsData(res.data);
+    });
   }, []);
+  // const getAboutUs = async () => {
+  //   const response = await fetch('http://localhost:4545/api/aboutus');
+  //   const data = await response.json();
+  //   setAboutUsData(data);
+  // };
+
+  // useEffect(() => {
+  //   getAboutUs();
+  // }, []);
 
   return (
     <section className="qui-som">
