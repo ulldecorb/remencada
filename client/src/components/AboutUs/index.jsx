@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './aboutUs.css';
 
 export const AboutUs = function AboutUs() {
   const [aboutUsData, setAboutUsData] = useState([]);
 
-  const getAboutUs = async () => {
-    const response = await fetch('http://localhost:4545/api/aboutus');
-    const data = await response.json();
-    setAboutUsData(data);
-  };
-
   useEffect(() => {
-    getAboutUs();
+    axios.get('http://localhost:4545/api/aboutus').then((res) => {
+      setAboutUsData(res.data);
+    });
   }, []);
+  // const getAboutUs = async () => {
+  //   const response = await fetch('http://localhost:4545/api/aboutus');
+  //   const data = await response.json();
+  //   setAboutUsData(data);
+  // };
+
+  // useEffect(() => {
+  //   getAboutUs();
+  // }, []);
 
   return (
     <section className="qui-som">
@@ -23,6 +29,8 @@ export const AboutUs = function AboutUs() {
           <p>{article.p2}</p>
           <p>{article.p3}</p>
           <p>{article.p4}</p>
+          <p>{article.p5}</p>
+          <p>{article.p6}</p>
         </article>
       ))}
       <h2>Actes de l&#39;Obra</h2>

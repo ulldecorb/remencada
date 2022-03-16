@@ -9,12 +9,12 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: 'Open Sans', sans-serif;
-  background-color: #630404;
+  background-color: black;
 }
 
 body h1, body h2 {
   font-family: 'Ubuntu', sans-serif;
-  color: #cc3e25;
+  color: #e4c331;
 }
 
 body h2 {
@@ -38,7 +38,7 @@ body section {
 }
 
 body article {
-  padding: 0 3vw;
+  padding: 2vh 3vw;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,10 +53,14 @@ body article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80vw;
+  border-radius: 1.5vw;
+  background-color: #fff;
+  margin: 2vh 0;
 }
 
 body article p {
-  color: #cfd15a;
+  color: #000;
 }
 
 body iframe {

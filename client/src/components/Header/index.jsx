@@ -5,7 +5,10 @@ import './Header.css';
 export const Header = function Header() {
   return (
     <header className="header">
-      <Link to="../">
+      <Link
+        to="../"
+        className="header__title-link"
+      >
         <h1 className="header__title">LA REMENÇADA</h1>
       </Link>
       <nav className="header__navbar">

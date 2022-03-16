@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './History.css';
 
 export const History = function History() {
   const [historyData, setHistoryData] = useState([]);
 
-  const getHistory = async () => {
-    const response = await fetch('http://localhost:4545/api/histories');
-    const data = await response.json();
-    setHistoryData(data);
-  };
-
   useEffect(() => {
-    getHistory();
+    axios.get('http://localhost:4545/api/histories').then((res) => {
+      setHistoryData(res.data);
+    });
   }, []);
+  // const getHistory = async () => {
+  //   const response = await fetch('http://localhost:4545/api/histories');
+  //   const data = await response.json();
+  //   setHistoryData(data);
+  // };
+
+  // useEffect(() => {
+  //   getHistory();
+  // }, []);
 
   return (
     <section className="history">

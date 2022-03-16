@@ -2,6 +2,6 @@
 @import '../../style/mixins';
 
 .home {
-    background-color: $main-color; 
+    // background-color: $main-color; 
     @include flex(column, center, center)
 }
